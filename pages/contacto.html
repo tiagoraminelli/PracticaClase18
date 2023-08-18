@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="headerMain">
+        <h1 class="tituloPrincipal">Nombre Bar</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="comida.html">Comida</a></li>
+                <li><a href="tragos.html">Tragos</a></li>
+                <li><a href="#">Fiestas</a>
+                    <ul class="menuSecundario">
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="proximas_fechas.html">Próximas fechas</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contacto">
+        <h2 class="tituloReservas">Reservá tu lugar</h2>
+        <!-- formaulario de contacto -->
+        <form action="#" enctype="application/x-www-form-urlencoded" method="GET" class="formContacto">
+            <!-- Nombre -->
+            <label for="nombre">Nombre Completo</label></br>
+            <input type="text" name="nombre" id="nombre"></br>
+            <!-- Mail -->
+            <label for="email">Email</label></br>
+            <input type="email" name="email" id="email" placeholder="Ej: juan@hola.com"></br>
+            <!--Teléfono -->
+            <label for="telefono">Teléfono</label></br>
+            <input type="number" name="telefono" id="telefono" placeholder="Ej: 095700684"></br>
+            <!-- Tipo de evento -->
+            <p class="tipoEvento">Tipo de evento</p><br>
+            <label for="cumpleanos">Cumpleaños</label>
+            <input type="radio" name="evento" value="cumpleaños">
+            <label for="recibimiento">Recibimiento</label>
+            <input type="radio" name="evento" value="recibimiento">
+            <label for="corporativo">Corporativo</label>
+            <input type="radio" name="evento" value="corporativo"><br>
+            <br>
+            <!-- Fecha -->
+            <label for="fecha_reserva">Fecha deseada</label><br>
+            <input type="date" name="fecha_reserva" value="2021-04-19" min="2021-04-19" max="2022-12-31"><br>
+            <!-- Comentarios adicionales -->
+            <label for="comentarios">Comentarios adicionales</label><br>
+            <textarea name="comentarios" cols="30" rows="10" placeholder="Comentarios adicionales, cantidad personas."></textarea><br>
+            <!-- Método de pago -->
+            <label for="metodo_de_pago">Método de pago</label><br>
+            <select name="pago">
+                <option value="tarjeta">Tarjeta de crédito</option>
+                <option value="efectivo">Efectivo</option>
+                <option value="cheque">Cheque</option>
+            </select>
+            <br>
+            <!-- Promociones -->
+            <label for="promociones">¿Aceptas recibir promociones vía mail?</label>
+            <input type="checkbox"><br><br>
+            <!-- Enviar o resetear -->
+            <input type="submit" value="Reservar" class="reservar">
+            <input type="reset" value="Limpiar" class="limpiar"> 
+            <br>
+        </form>
+        <!-- fin formulario de contacto -->
+    </section>
+    <footer class="footer">Nombre Bar 2021 -  Seguinos en nuestras redes sociales  -</footer>
+</body>
+</html>
